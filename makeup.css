@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+    .parent{
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+        justify-content: space-evenly;
+        gap: 2rem; 
+    }
+    
+    .parent h3{
+        font-size: 3rem;
+        color: magenta;
+        text-shadow: 0 0 3px gray;
+        font-family: "Single Day";
+    }
+
+    .parent i{
+        display: block;
+        margin: 1rem 0;
+        animation-name: changecolor;
+        animation-duration: 5s;
+    }
+
+    .parent button{
+        border: none;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: hotpink;
+        color: #ffffff;
+
+    }
+
+    .parent img{
+        flex: 1;
+        animation-name: animeimg;
+        animation-duration: 10s; 
+        animation-iteration-count: 5s;
+
+        
+    }
+
+    /* .parent img:active{
+        opacity: 1rem;
+    } */
+
+    .parent div{
+        flex: 1;
+
+    
+        
+    }
+    .parent p{
+        margin: 0.4rem 0;
+        font-family: 'Times New Roman', Times, serif;
+        animation-name: changecolor;
+        animation-duration: 10s;
+        animation-iteration-count: infinite; 
+    
+
+    }
+        
+        
+    @keyframes changecolor {
+        from{
+            color: red;
+            transform: (360deg);
+        }
+        to{
+            color: magenta;
+            /* font-size: 1.5rem;  */
+            transform: rotate(360deg);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .parent{
+            flex-direction: column;
+        }
+        
+    }
+
+    @keyframes animeimg {
+        25%{
+            transform: scale(0.5);
+        }
+        50%{
+            transform: scale(1);
+        }
+        75%{
+            transform: scale(1.2);
+        }
+    }

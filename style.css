@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: cursive;
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+    display: grid;
+    place-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+}
+
+.calculator{
+    width: 34%;
+    height: 75%;
+    background-color: transparent;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#ans{
+    width: 90%;
+    height: 20%;
+    margin-top: 20px;
+    font-family: 'Loto sans-serif', sans-serif;
+    font-size: 2.5rem;
+    outline: none;
+    margin-left: 20px;
+    text-align: right;
+
+}
+
+/* .screen{
+    border: 1px solid #d3d3d3;
+    height: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+} */
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2px;
+
+}
+  
+.button input[type='button']{ 
+    width: 30%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    background-color: transparent;
+    border-radius: 6px;
+    margin: 2px;
+    
+}
+
+/* .allbutton{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2px;
+} */
+
+/* button:active{
+    background-color: #333333;
+    color: red;
+} */
+
+.button input[type='button']:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+@media (max-width:768px) {
+    .calculator{
+        background-color: aqua;
+        flex-direction: column;
+        width: 60%;
+        
+        
+        
+    }
+}

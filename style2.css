@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: deepskyblue;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+
+
+
+#bigdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:crimson;
+    gap: 2rem ;
+    padding: 1rem;
+}
+
+#lastdiv{
+    margin: 2rem;
+    text-align: center;
+    background-color: cadetblue;
+    
+}
+div h3{
+    padding: 2rem;
+}
